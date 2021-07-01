@@ -1,13 +1,4 @@
-/**
-* Template Name: Folio - v4.3.0
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   background: #000000;
   color: #898989;
@@ -473,7 +464,7 @@ p {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 120px 0 0 0;
-  background-color: white;
+  background-color: black;
   min-height: 40px;
 }
 
@@ -1553,6 +1544,200 @@ color:          blue !important;
 /*.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: #ff0000 !important;
 }*/
+.card {
+
+  background-color: rgba(0, 0, 0, 0.2);
+ 
+}
+
+  #right-panel-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #myVideo {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -100;
+}
+.ali {
+  background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+ 
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+.content {
+  position: relative;
+}
+#right-panel-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item h2{
+	font-size: 80px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0;
+}
+.home .carousel-item p{
+	font-size: 30px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next, 
+.home .carousel-control-prev{
+	height: 60px;
+	width: 60px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover, 
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img, 
+.home .carousel-control-prev img{
+   width: 30px;
+}
+.home .carousel-control-next{
+	right: -90px;
+}
+.home .carousel-control-prev{
+	left: -90px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .home .carousel-control-next, 
+  .home .carousel-control-prev{
+  	display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .home .carousel-item h2{
+  	font-size: 45px;
+  }
+  .home .carousel-item p{
+  	font-size: 22px;
+  }
+}
+
+
+
+
+
+
+
 
 
   
