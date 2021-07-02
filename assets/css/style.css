@@ -174,7 +174,7 @@ p {
   padding: 15px 0;
   background-color: #111;
   top: -100%;
-  box-shadow: 0px 2px 25px rgba(228, 85, 85, 0.08);
+  box-shadow: 0px 2px 25px rgba(243, 9, 9, 0.08);
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -531,7 +531,7 @@ p {
 
 #about .div-img-bg .about-img img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgb(252, 5, 5);
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
