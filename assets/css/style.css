@@ -1708,6 +1708,16 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+.Container  {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: black;
+  opacity: 0.5;
+}
 
 .overlay {
   min-height: 100vh;
@@ -1721,17 +1731,29 @@ video {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .overlay h1 {
   font-size: 80px;
-    color: #ffffff;
-    
+    color: white;
+    top: 60px;
     margin: 2rem 3rem 0;
     mix-blend-mode: overlay;
     padding: 5px 15px;
     text-align: center;
+    z-index: 1;
 }
+@media ( max-width: 767px ) {
+  .overlay h1 {
+    font-size: 45px;
+    
+    top: -10px;
+    z-index: 1;
+    }
+   }
+
+  
 header {
-	background:tan;
+	
 	position: fixed;
 	width: 100%;
 	text-align: center;
@@ -1739,13 +1761,38 @@ header {
 	-webkit-transition: .4s;
 	transition: .4s;
 	padding: 0.5em;
+  z-index: 1;
 }
 nav a {
     color: inherit;
     padding: 0 12px;
     text-decoration: none;
 }
-
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)   {
+  .overlay h1 {
+    font-size: 60px;
+    position:absolute;
+    top: 1250px;
+    
+    
+      
+    }
+   }
+   @media only screen and  (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)   {
+    .overlay h1 {
+      font-size: 60px;
+      position:absolute;
+      top: 1570px;
+      
+      
+        
+      }
+     }
+     .baba .container {
+       background-color:#0e0e0e  ;
+       opacity: .6;
+     }
+     
 
 
 
